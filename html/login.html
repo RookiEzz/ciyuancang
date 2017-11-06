@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://cycang.com/Public/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../scss/login.css">
+    <link rel="stylesheet" type="text/css" href="../scss/footer.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/login.js"></script>
+
+    <title>登录-次元仓</title>
+</head>
+<body>
+<!-- header start -->
+<div class="c_content c_content_top">
+    <a href="#" class="c_top_logo c_fl"><img src="../imgs/loginreg_logo.png" alt="logo"></a>
+    <p class="c_top_txt c_fr">欢迎登录</p>
+    <div class="c_clear_both"></div>
+</div>
+<!-- header end -->
+<div class="c_login_wrap">
+    <div class="c_content">
+        <form action="" method="post" class="c_login_box c_fr">
+            <ul id="c_comm_login">
+                <li><p>用户登录</p></li>
+                <li>
+                    <label><span class="c_user_logo c_fl"></span><input type="text" class="c_login_input c_fl" name="cycang_user" id="cycang_user" placeholder="请输入手机号" required=""></label>
+                </li>
+                <div class="c_clear_both"></div>
+                <li>
+                    <label><span class="c_pwd_logo c_fl"></span><input type="password" class="c_login_input c_fl" name="cycang_pwd" id="cycang_pwd" placeholder="密码" required=""></label>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <label><span class="c_v_code_font c_fl">验证码:</span><input type="text" class="c_v_code_input c_fl" name="captcha" id="code" placeholder="验证码" required=""></label>
+                    <img src="../imgs/i.jpg" class="c_v_code_img c_fl" id="verify"  align="absmiddle">
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <label><input type="checkbox" class="c_fl" name="remember" id="remember"><span class="c_remember c_fl">记住我</span></label>
+                    <a href="http://www.cycang.com/i.php?c=login&amp;a=reset" class="c_remember c_fr">忘记密码？</a>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <a href="#" class="c_btn c_login_btn c_fl c_fake_a" id="login-btn">登录</a>
+                    <a href="reg.html" class="c_btn c_reg_btn c_fl" id="reg-btn">快速注册</a>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li class="c_wq_login">
+                    <span class="c_fl">合作账号登录：</span>
+                    <span class="c_fl">
+                        <a href="#" target="_blank"><div class="c_weibo_icon c_fl"></div>微博登录</a>
+                    </span>
+                    <span class="c_fl">
+                        <a href="#" target="_blank"><div class="c_qq_icon c_fl"></div>QQ登录</a>
+                    </span>
+					<span class="c_fl">
+						<a href="javascript:;" class="c_wechat_btn"><div class="c_wechat_icon c_fl"></div>微信登录</a>
+					</span>
+                    <div class="c_clear_both"></div>
+                </li>
+                <div class="c_line"></div>
+                <li class="c_tips">
+                    <span>1.担心邮费？次元仓自营商品首次下单、购物满69元均可免邮！</span><br>
+                    <span>2.木有优惠券？下载APP并注册、使用第三方账号首次登录、绑定手机三管齐下拿优惠券~</span>
+                </li>
+            </ul>
+            <!--wechat login-->
+            <div class="c_wechat_box">
+            	<div id="wechat_login_container"></div>
+            	<a href="javascript:;" class="c_wechat_back">返回登录</a>
+            </div>
+        </form>
+    </div>
+    <div class="c_clear_both"></div>
+</div>
+
+
+
+
+<input type="hidden" id="J_login_url" value="i.php?c=login&amp;a=checkLogin&amp;is_ajax=1">
+<div class="c_footer c_footer2">
+    <div class="c_content">
+    	<div class="c_customer_service"></div>
+        <div class="c_copy_right"> ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">粤ICP备15028368号</a>)
+		
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="http://cycang.com/Public/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../scss/reg.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../scss/footer.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/reg.js"></script>
+	<title>注册-次元仓</title>
+</head>
+<body>
+<!-- header start -->
+<div class="c_content c_content_top">
+        <a href="#"><img class="c_top_logo c_fl" src="../imgs/loginreg_logo.png" alt="logo" border="0"></a>
+        <div class="c_line c_fl"></div>
+        <h1 class="c_top_txt c_fl">欢迎注册</h1>
+        <div class="c_clear_both"></div>
+</div>
+<!-- header end -->
+<div class="c_reg_wrap">
+	<div class="c_content">
+	<form method="get">
+		<ul class="c_reg_box">
+			<li>
+				<input type="tel" class="c_reg_input c_fr c_reg_ph" id="phone" name="phone" placeholder="请输入手机号"><span>手机号：</span><s class="phone"></s>
+                <div class="c_clear_both"></div>	
+			</li>
+			<li>
+				<input type="password" class="c_reg_input c_fr c_reg_lock" name="pwd" id="pwd" placeholder="请输入您的密码"><span>密码：</span>
+                <div class="c_clear_both"></div>	
+			</li>
+			<li>
+				<input type="password" class="c_reg_input c_fr c_reg_lock" name="repwd" id="repwd" placeholder="请再次输入密码"><span>确认密码：</span>
+                <div class="c_clear_both"></div>
+			</li>
+			<li>
+				<img src="../imgs/i.jpg" class="c_fr" id="verify" title="点击换一张"><label><input type="text" class="c_reg_input c_reg_input_v c_fr" id="captcha" name="captcha" placeholder="请输入验证码"><span>验证码：</span></label>
+				<div class="c_clear_both"></div>
+			</li>
+			<li>
+				<input type="button" value="获取验证码" class="c_btn c_btn_ph c_fr" id="msgcode-btn"><label><input type="text" class="c_reg_input c_reg_input_v c_fr" placeholder="请输入验证码" name="sms_verify" id="sms_verify"><span>手机验证：</span></label>
+				<div class="c_clear_both"></div>
+			</li>
+			<li class="c_reg_check">
+				<label><input type="checkbox" name="if_agree" value="1" id="if_agree" checked="">阅读并接受次元仓</label><a href="#">[用户协议]</a>
+			</li>
+			<li>
+				<input type="button" value="注  册" class="c_btn c_btn_reg c_fl" id="reg-btn">
+
+				<a href="login.html" class="c_btn c_btn_login c_fl" id="login-btn">返回登录</a>
+				<div class="c_clear_both"></div>
+			</li>
+			<li class="c_wq_login">
+
+				<span class="c_fl">合作账号登录：</span>
+				<span class="c_fl" title="微博">
+					<a href="#" target="_blank"><div class="c_weibo_icon c_fl"></div>微博登录</a>
+				</span>
+				<span class="c_fl" title="QQ">
+					<a href="#" target="_blank"><div class="c_qq_icon c_fl"></div>QQ登录</a>
+				</span>
+				<!--TODO wechat url-->
+				<span class="c_fl" title="微信">
+					<a href="javascript:;" class="c_wechat_btn"><div class="c_wechat_icon c_fl"></div>微信登录</a>
+				</span>
+				<div class="c_clear_both"></div>
+
+			</li>
+		</ul>
+	</form>
+		<!--wechat login-->
+        <div class="c_wechat_box">
+        	<div id="wechat_login_container"></div>
+        	<div class="c_wechat_back">返回注册</div>
+        </div>
+	</div>
+</div>
+
+<div class="c_footer c_footer2">
+    <div class="c_content">
+    	<div class="c_customer_service"></div>
+        <div class="c_copy_right"> ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：<a href="#" target="_blank">粤ICP备15028368号</a>)
+		
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>

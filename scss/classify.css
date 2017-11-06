@@ -1,0 +1,132 @@
+.classify_fenlei s,.sortBy s{
+	display: inline-block;
+	background: url(../imgs/down_grey.png);
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.classify_fenlei p{
+	line-height: 20px;
+	margin-left: 14px;
+	float: left;
+}
+.classify_fenlei ul{
+	width: 840px;
+}
+.classify1 ul li a{
+	float: left;
+	padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+.classify1 ul li{
+	float: left;
+}
+.classify1 ul li:hover{
+	background: #da324d;
+
+}
+.classify1 ul{
+	float: left;
+	padding-left:12px;
+	
+}
+.classify1{
+	margin: 0 auto;
+	background: #F16F6F;
+}
+.classify_fenlei{
+	width: 1040px;
+    margin: 20px auto 0;
+    border-bottom: 1px dotted #dcdcdc;
+    overflow: hidden;;
+}
+.classify2{
+	margin: 0 26px;
+    padding-top: 10px;
+    border-bottom: 1px dotted #dcdcdc;
+    position: relative;
+    overflow: hidden;
+}
+.classify2 span{
+	width: 90px;
+}
+.classify2 ul li{
+	float: left;
+}
+.classify2 ul li a{
+	display: inline-block;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    width: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+.classify2 ul li a:hover{
+	text-decoration: underline;
+    color: #ed3f3f;
+}
+.classify_onclick{
+	height: 108px;
+	overflow: auto;
+}
+
+.sortBy{
+	width: 1040px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee4e4;
+}
+.sortBy ul li{
+	width: 84px;
+
+	float: left;
+	padding: 4px 0;
+	text-align: center;
+	border: 1px solid #d8d8d8;
+}
+.sortBy ul li:nth-child(3){
+	height: 16px;
+}
+.sortBy li s{
+	background: url(../imgs/up_grey.png);
+}
+#pubu{
+	width: 1040px;
+	margin:20px auto;
+}
+#pubu .products{
+	width: 250px;
+    height: 363px;
+    margin: 0 10px 10px 0;
+  	float:left;
+  	border: 1px solid #ebebeb;
+}
+#pubu .products:hover{
+	border-color: #DC5C95;
+}
+#pubu .products p{
+	text-align: left;
+    padding-top: 10px;
+    height: 3em;
+    line-height: 1.5em;
+    overflow: hidden;
+    margin:0 auto;
+    margin-left: 5px;
+}
+#pubu .products h6{
+	padding: 0;
+	margin-top: 8px;
+    color: red;
+    font-size: 16px;
+    text-align: left;
+}
+#pubu .products img{
+	width: 246px;
+	height: 250px;
+	border:1px solid ;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>买买买-次元仓</title>
+	<link rel="icon" href="http://cycang.com/Public/img/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="../scss/detail.css" type="text/css"/>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/cart.js"></script>
+</head>
+<body>
+	<div class="cyc_header" id="cyc_header">
+		<div class="cyc_h_top_wrap">
+			<div class="cyc_func_container">
+				<div class="cyc_tools_left left" id="c_log_reg">
+					<a class="left" href="#" id="">登录</a>
+					<a href="#" class="cyc_tools_item" id="test">注册</a>
+				</div>
+				<div class="cyc_tools_right right">
+					<a href="#" target="_blank">联系客服</a>
+					<a href="#" class="cyc_tools_item" target="_blank">购物车</a>
+					<a href="#" class="cyc_tools_item" target="_blank">我的订单</a>
+					<a href="#" class="cyc_tools_item" target="_blank">我的收藏</a>
+					<a href="#"><img src="../imgs/header_sina.jpg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="cyc_h_mid_wrap">
+			<div class="cyc_logo left">
+				<a href="#" class="cyc_logo_link"><img class="" src="../imgs/logo.jpg" alt=""></a>
+			</div>
+			<div class="cyc_search left">
+				<form action="#" method="get" target="_blank" id="J_search" data-suggest-url="index.php?c=product&amp;a=getSearchSuggest">
+					<div class="cyc_search_input">
+						<input type="hidden" name="a" value="page">
+						<input type="text" class="cyc_search_key" name="q" value="" id="search_key" autocomplete="off">
+						<input type="submit" value="搜索" class="cyc_search_btn">
+					</div>
+				</form>
+				<ul class="cyc_hot_query">
+					<li><a href="#" target="_blank" title="lolita">lolita</a></li>
+					<li><a href="#" target="_blank" title="Honest">Honest</a></li>
+					<li><a href="#" target="_blank" title="人">人</a></li>
+					<li><a href="#" target="_blank" title="画影">画影</a></li>
+					<li><a href="#" target="_blank" title="风荷举">风荷举</a></li>
+					<li><a href="#" target="_blank" title="剑三">剑三</a></li>
+					<li><a href="#" target="_blank" title="鹤归">鹤归</a></li>
+					<li><a href="#" target="_blank" title="烟昔泠">烟昔泠</a></li>
+					<li><a href="#" target="_blank" title="鲛人歌">鲛人歌</a></li>
+					<li><a href="#" target="_blank" title="举">举</a></li>
+					<li><a href="#" target="_blank" title="风荷">风荷</a></li>
+				</ul>
+				<ul class="c_search_suggest" id="J_search_suggest" style="display: none;"></ul>
+			</div>
+			<a href="#" target="_blank">
+				<div class="cyc_cart right">
+					<span class="cyc_cart_icon"></span>
+					<span class="cyc_cart_text">我的购物车</span>
+					<span class="cyc_cart_nums" style="display:none;">0</span>				
+				</div>
+			</a>
+		</div>
+		<div class="cyc_h_bot_wrap">
+			<div class="cyc_h_bot_container">
+				<div class="cyc_h_link right">
+					<div class="cyc_link_list right">
+						<div class="cyc_link_item left">
+							<a target="_blank" href="#">首页</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">服饰仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="#">周边仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">古风仓</a>
+						</div>
+						<div class="cyc_link_item left">
+							<a target="_blank" href="#">闪购仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">手办仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">漫展票务</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">零食仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">首饰仓</a>
+						</div>
+						<div class="cyc_link_item left ">
+							<a target="_blank" href="#">汉风仓</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="c_thead">
+                    <div class="c_th_7 c_th left c_pl">
+                        <div class="c_checkbox_simulate c_get_all J_get_all" id="J_get_all">
+                            <label>
+                                <i class="on"><input class="" type="checkbox"></i>
+                            </label>
+                        </div>
+                        全选
+                    </div>
+                    <div class="c_th_33 c_th left c_pl_60">商品信息</div>
+                    <div class="c_th_10 c_th left c_text_c price">销售价</div>
+                    <div class="c_th_20 c_th c_cart_wrap_th left mount">数量</div>
+                    <div class="c_th_10 c_th left expires">库存</div>
+                    <div class="c_th_10 c_th left small_cal">小计</div>
+                    <div class="c_th_10 c_th left del">操作</div>
+                </div>
+		<div class="products_cart">
+			
+		</div>
+	</div>
+	<!--footer start-->
+	<footer class="c_footer">
+	<div class="c_container">
+		<div class="c_accept_wrap">
+			<ul class="c_accept">
+				<li>
+					<i class="c_icon_cang1"></i>
+					<span>首次下单免邮</span>
+				</li>
+				<li>
+					<i class="c_icon_cang2"></i>
+					<span>自营69元包邮</span>
+				</li>
+				<li>
+					<i class="c_icon_cang3"></i>
+					<span>7天退货保障</span>
+				</li>
+			</ul>
+		</div>
+		<div class="c_infor_wrap">
+			<div class="c_infor">
+				<dl>
+					<dt>商务合作</dt>
+					<dd><a href="http://cycang.com/index.php?a=cooper" target="_blank">品牌进驻</a></dd>
+					<dd>IP授权</dd>
+					<dd>批发业务</dd>
+					<dd>票务合作</dd>
+				</dl>
+				<dl>
+					<dt>联系方式</dt>
+					<dd>官方邮箱：act@cycang.com</dd>
+					<dd>渠道合作：act@cycang.com</dd>
+					<dd>媒体合作：act@cycang.com</dd>
+				</dl>
+				<dl>
+					<dt>客服售后</dt>
+					<dd>客服热线：400-667-1673</dd>
+					<dd>客服QQ1：3112573893</dd>
+					<dd>客服QQ2：2627466500</dd>
+				</dl>
+				<dl>
+					<dt>直播合作</dt>
+					<dd>QQ：2201959143</dd>
+				</dl>
+
+				<ul class="c_infor_right">
+					<li>
+						<a href="http://cycang.com/act.php?c=appDownload" target="_blank">
+							<img class="c_qr" src="../imgs/qr.jpg" alt="">
+							<p class="c_red_light">下载手机次元仓</p>
+						</a>
+					</li>
+					<li>
+						<i class="c_icon_weibo"></i>
+						<p>微博搜索并关注<span class="c_red_light">@次元仓</span></p>
+					</li>
+					<li>
+						<i class="c_icon_wechat"></i>
+						<p>微信公众号搜索并关注<span class="c_red_light">次元仓</span></p>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<p class="c_copyright">
+			ICP © 2016 广州脑动网络科技有限公司 版权所有 <a href="#" target="_blank"> 免责声明</a>（备案号：<a href="#" target="_blank">粤ICP备15028368号</a>)
+		</p>
+	</div>
+	</footer>
+</body>
+</html>

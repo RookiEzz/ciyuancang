@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="http://cycang.com/Public/img/favicon.ico" type="image/x-icon">
+    <title>吃土清单 - 次元仓</title>
+    <link rel="stylesheet" href="../scss/pay.css" />
+    <link rel="stylesheet" href="../scss/detail.css" type="text/css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/pay.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../imgs/logo.png" alt="" />
+        <div class="top-nav fr">
+            <span><a href="i.php">用户中心</a> | <a href="#">退出</a></span>
+            <span class="top-nav-cart"><a href="#">购物车</a></span>
+            <a class="back" href="../index.html">返回首页</a>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="progress">
+                <img src="../imgs/cart_buy.png" alt="" />
+                <div class="spe fl"></div>
+                <img src="../imgs/checkout.png" alt="" />
+                <div class="spe fl"></div>
+                <img src="../imgs/unorder.png" alt="" />
+            </div>
+            <div class="spqd"><span></span>
+                <p class="fl">商品清单：</p>
+            </div>
+            <div class="tr thead">
+                <div class="th40 th left name">商品名称</div>
+                <div class="th10 th left price">销售价</div>
+                <div class="th20 th cart-wrap-th left mount">数量</div>
+                <div class="th10 th left expires">库存</div>
+                <div class="th20 th left last">小计</div>
+            </div>
+            <div class="products"></div>
+        </div>
+    </div>
+    <div class="dizhi">
+        <span class="img left"></span>
+        <p class="left">收货地址：</p><span class="new_dizhi">使用新地址</span>
+    </div>
+    <div class="add_dizhi">
+       
+    </div>
+    <div class="dizhi">
+        <span class="img left"></span>
+        <p class="left">支付方式：</p>
+    </div>
+    <div class="zhifu">
+        <a href="javascript:void(0)"></a>
+        <span></span>
+    </div>
+    <div class="dizhi">
+        <span class="img left"></span>
+        <p class="left">配送方式：</p>
+    </div>
+    <div class="fast_send">
+        <span>快速配送</span>
+    </div>
+    <div class="jiesuan">
+        <p></p>
+        <p>满减抵扣：-¥0.00</p>
+        <span></span>
+        <input class="tijiao" type="submit" value="提交订单">
+    </div>
+   <!--footer start-->
+<footer class="c_footer">
+	<div class="c_container">
+		<div class="c_accept_wrap">
+			<ul class="c_accept">
+				<li>
+					<i class="c_icon_cang1"></i>
+					<span>首次下单免邮</span>
+				</li>
+				<li>
+					<i class="c_icon_cang2"></i>
+					<span>自营69元包邮</span>
+				</li>
+				<li>
+					<i class="c_icon_cang3"></i>
+					<span>7天退货保障</span>
+				</li>
+			</ul>
+		</div>
+		<div class="c_infor_wrap">
+			<div class="c_infor">
+				<dl>
+					<dt>商务合作</dt>
+					<dd><a href="http://cycang.com/index.php?a=cooper" target="_blank">品牌进驻</a></dd>
+					<dd>IP授权</dd>
+					<dd>批发业务</dd>
+					<dd>票务合作</dd>
+				</dl>
+				<dl>
+					<dt>联系方式</dt>
+					<dd>官方邮箱：act@cycang.com</dd>
+					<dd>渠道合作：act@cycang.com</dd>
+					<dd>媒体合作：act@cycang.com</dd>
+				</dl>
+				<dl>
+					<dt>客服售后</dt>
+					<dd>客服热线：400-667-1673</dd>
+					<dd>客服QQ1：3112573893</dd>
+					<dd>客服QQ2：2627466500</dd>
+				</dl>
+				<dl>
+					<dt>直播合作</dt>
+					<dd>QQ：2201959143</dd>
+				</dl>
+
+				<ul class="c_infor_right">
+					<li>
+						<a href="http://cycang.com/act.php?c=appDownload" target="_blank">
+							<img class="c_qr" src="../imgs/qr.jpg" alt="">
+							<p class="c_red_light">下载手机次元仓</p>
+						</a>
+					</li>
+					<li>
+						<i class="c_icon_weibo"></i>
+						<p>微博搜索并关注<span class="c_red_light">@次元仓</span></p>
+					</li>
+					<li>
+						<i class="c_icon_wechat"></i>
+						<p>微信公众号搜索并关注<span class="c_red_light">次元仓</span></p>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<p class="c_copyright">
+			ICP © 2016 广州脑动网络科技有限公司 版权所有 <a href="#" target="_blank"> 免责声明</a>（备案号：<a href="#" target="_blank">粤ICP备15028368号</a>)
+		</p>
+	</div>
+</footer>
+    <div class="shade"></div>
+    <div class="shouhuo_info">
+        <p class="bold">收货信息<span class="right close"></span></p>
+        <input class="same person_name" type="text" placeholder="收货人姓名" value="">
+        <input class="same person_number" type="text" placeholder="手机号码">
+        <p class="left text">收货地址</p>
+        <div class="sel">
+            <!-- 省 -->
+            <select id="province"></select>
+            <!-- 城市 -->
+            <select id="city"></select>
+            <!-- 区县 -->
+            <select id="district"></select>
+        </div>
+        <input class="same xiangxi" type="text" placeholder="详细地址">
+        <input class="notsame" type="checkbox">是否设置为默认地址
+        <a class="add" href="javascript:void(0)">添加</a>
+        <a class="cancel" href="javascript:void(0)">取消</a>
+    </div>
+</body>
+
+</html>
